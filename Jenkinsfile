@@ -1,5 +1,6 @@
 pipeline {
     agent any
+
     environment {
         DB_USER = 'prod'
         DB_PASSWORD = 'password'
@@ -8,6 +9,7 @@ pipeline {
         ACCESS_KEY_ID = 'AKIAXXXXXXXX'
         SECRET_ACCESS_KEY = 'XXXXXXXXXXXXXXX'
     }
+
     stages {
         stage('Backup Database') {
             steps {
